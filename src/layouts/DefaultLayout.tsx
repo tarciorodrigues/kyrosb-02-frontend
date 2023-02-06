@@ -82,7 +82,6 @@ export default function DefaultLayout() {
                           onClick={() => {
                             setSidebarOpen(false)
                             setOptionClicked(item.href)
-                            console.log('item', item)
                         }}
                           className={classNames(
                             item.current

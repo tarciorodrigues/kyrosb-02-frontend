@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import api from "../services/api";
 
@@ -73,29 +73,6 @@ function Clientes() {
         setCliente(null)           
     }
 
-  /* const onUpdate = async (e: any) => {
-    console.log('chamou onUpdate => ', e)
-    await api({
-      method: 'PUT',
-      url: '/cliente',
-      data: {
-        id: e.id,
-        endereco: e.endereco,
-        nome: e.nome,
-        nascimento: e.nascimento,
-        cpfCnpj: e.cpfCnpj,
-      },
-    })
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-      handleData();
-      reset();           
-  }         */  
-
   function handleData() {    
     api
     .get('/cliente')
@@ -167,7 +144,7 @@ function Clientes() {
                 </div>
 
                 <div className='flex gap-4 justify-center w-full'>
-                <input className='flex border w-full p-1 border-gray-500' 
+                <input type="date" className='flex border w-full p-1 border-gray-500' 
                 {...register('nascimento')}                
                 value={cliente ? cliente.nascimento : ''}
                 onChange={(e) => setCliente({...cliente, nascimento: e.target.value})} 

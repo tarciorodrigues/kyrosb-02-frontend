@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import api from "../services/api";
 
@@ -70,29 +70,6 @@ function Produtos() {
         setProduto(null)           
     }
 
-  /* const onUpdate = async (e: any) => {
-    console.log('chamou onUpdate => ', e)
-    await api({
-      method: 'PUT',
-      url: '/produto',
-      data: {
-        id: e.id,
-        descricao: e.descricao,
-        nome: e.nome,
-        status: e.status,
-        valorUnidade: e.valorUnidade,
-      },
-    })
-      .then((data) => {
-        console.log(data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-      handleData();
-      reset();           
-  }         */  
-
   function handleData() {    
     api
     .get('/produto')
@@ -123,8 +100,6 @@ function Produtos() {
     handleData()
     
   }, []);
-
-  console.log('produto', produto)
 
 
   return (

@@ -1,4 +1,3 @@
-import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import api from "../services/api";
@@ -30,15 +29,6 @@ function Lancamentos() {
     handleSubmit,
     reset,
   } = useForm();
-
-  console.log(
-    'lancamentos =>', lancamentos,
-    'lancamento =>', lancamento,
-    'comboProduto =>', comboProduto,
-    'comboCliente =>', comboCliente,
-    )
-
-
 
   const onSubmit = async (data: any) => {
           if (edit){
@@ -144,9 +134,6 @@ function Lancamentos() {
     handleDataCliente()      
   }, []);
 
-  console.log('clientes', clientes)
-
-
 
   return (
     <>    
@@ -185,7 +172,7 @@ function Lancamentos() {
                 placeholder='Valor Total da Venda'
                 />
 
-                <input className='flex border w-full p-1 border-gray-500' 
+                <input type="date" className='flex border w-full p-1 border-gray-500' 
                 {...register('dataDaVenda')}
                 value={lancamento && lancamento.dataDaVenda}
                 onChange={(e) => setLancamento({...lancamento, dataDaVenda: e.target.value})} 
