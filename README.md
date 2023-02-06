@@ -21,3 +21,13 @@ $ yarn start
 <p align="center">
 <img alt="Tela de Clientes" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/clientes.png">
 </p>
+
+## Tela de Produtos
+<p align="center">
+<img alt="Tela de Produtos" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/produtos.png">
+</p>
+
+## Tela de Lançamentos
+<p align="center">
+<img alt="Tela de Lançamentos" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/lancamentos.png">
+</p>
