@@ -23,4 +23,4 @@ $ yarn start
   src="/public/clientes.jpg"
   alt="clientes"
   title="Clientes"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 300px" />
