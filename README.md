@@ -19,4 +19,8 @@ $ yarn start
 
 
 ## Tela de Clientes
-![clientes](./public/clientes.png)
+<img
+  src="/public/clientes.jpg"
+  alt="clientes"
+  title="Clientes"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
