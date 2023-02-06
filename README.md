@@ -17,10 +17,3 @@ $ yarn start
 
 # O front iniciará na porta:3000 - acesse <http://localhost:3000>
 
-
-## Tela de Clientes
-<img
-  src="/public/clientes.jpg"
-  alt="clientes"
-  title="Clientes"
-  style="display: inline-block; margin: 0 auto; max-width: 300px" />
