@@ -13,6 +13,6 @@ $ cd kyrosb-02-frontend
 $ yarn
 
 # Execute
-$yarn start
+$ yarn start
 
 # O front iniciará na porta:3000 - acesse <http://localhost:3000>
