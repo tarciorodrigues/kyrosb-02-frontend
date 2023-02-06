@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment,  useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import {
   Bars3Icon,
@@ -14,7 +14,7 @@ import Lancamentos from '../pages/Lancamentos'
 const navigation = [
   { name: 'Clientes', href: '#clientes', icon: UsersIcon, current: false },
   { name: 'Produtos', href: '#produtos', icon: TicketIcon, current: false },
-  { name: 'Lançamentos', href: '#lancamentos', icon: CalendarIcon, current: false },
+  { name: 'Lancamentos', href: '#lancamentos', icon: CalendarIcon, current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -23,13 +23,7 @@ function classNames(...classes: string[]) {
 
 export default function DefaultLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const [optionClicked, setOptionClicked] = useState('#clientes')
-
-  console.log('optionClicked', optionClicked)
-  console.log('navigation[0].href', navigation[0].href)
-
-
-
+  const [optionClicked, setOptionClicked] = useState('#lancamentos')
 
   return (
     <>
@@ -203,7 +197,7 @@ export default function DefaultLayout() {
                                 
                     {optionClicked === '#clientes' && <Clientes />}
                     {optionClicked === '#produtos' && <Produtos />}
-                    {optionClicked === '#lançamentos' && <Lancamentos />}
+                    {optionClicked === '#lancamentos' && <Lancamentos />}
                             
               </div>
               </div>

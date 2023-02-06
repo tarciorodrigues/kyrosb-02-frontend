@@ -127,8 +127,6 @@ function Clientes() {
     
   }, []);
 
-  console.log('cliente', cliente)
-
 
   return (
     <>    
@@ -146,24 +144,27 @@ function Clientes() {
               <form className='flex flex-col gap-4' onSubmit={handleSubmit(onSubmit)}>
 
                 <div className='flex flex-col gap-4'>
-                <div className='flex flex-col w-full gap-2 pr-32 flex-auto'>
+                <div className='flex flex-col w-full gap-2  flex-auto'>
+
+                <div className='flex w-full gap-4'>
 
                 <input 
                 {...register('nome')} 
-                  className='flex border p-1 border-gray-500' 
+                  className='flex border p-1 w-full border-gray-500' 
                   value={cliente ? cliente.nome : ''}
                   onChange={(e) => setCliente({...cliente, nome: e.target.value})} 
                   name='nome' 
                   placeholder='Nome'
                   />
                 
-                <input className='flex border p-1 border-gray-500' 
+                <input className='flex border p-1 w-full border-gray-500' 
                 {...register('endereco')}
                 value={cliente ? cliente.endereco : ''}
                 onChange={(e) => setCliente({...cliente, endereco: e.target.value})} 
                 name='endereco' 
                 placeholder='Endereço' 
                 />
+                </div>
 
                 <div className='flex gap-4 justify-center w-full'>
                 <input className='flex border w-full p-1 border-gray-500' 
@@ -236,11 +237,11 @@ function Clientes() {
                     >
                     Nome
                     </th>
-                    <th scope="col" className="hidden lg:table-cell px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    Nascimento
-                    </th>
                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                     Endereço
+                    </th>
+                    <th scope="col" className="hidden lg:table-cell px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                    Nascimento
                     </th>
                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                      CPF/CNPJ
