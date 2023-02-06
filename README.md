@@ -16,7 +16,7 @@ $ yarn
 $ yarn start
 
 # O front iniciará na porta:3000 - acesse <http://localhost:3000>
-
+```
 ## Tela de Clientes
 <p align="center">
 <img alt="Tela de Clientes" src="https://github.com/tarciorodrigues/kyrosb-02-frontend/blob/master/public/clientes.png">
