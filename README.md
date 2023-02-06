@@ -1,5 +1,14 @@
-mvn clean install
+🎲 Rodando o Front (dashboard)
+# Clone este repositório
+$ git clone https://github.com/tarciorodrigues/kyrosb-02-frontend.git
 
-docker run --name mysqldb -e MYSQL_ROOT_PASSWORD=Password -e MYSQL_DATABASE=mydb -d -p 3306:3306 mysql:latest
+# Acesse a pasta do projeto no terminal/cmd
+$ cd kyrosb-02-frontend
 
-mvn spring-boot:run
+# Instale as dependências
+$ yarn
+
+# Execute
+$yarn start
+
+# O front iniciará na porta:3000 - acesse <http://localhost:3000>
