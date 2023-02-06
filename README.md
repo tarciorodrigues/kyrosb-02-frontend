@@ -1,4 +1,8 @@
-🎲 Rodando o Front (dashboard)
+# kyrosb-02-frontend
+
+## 🎲 Rodando o Front (dashboard)
+
+```bash
 # Clone este repositório
 $ git clone https://github.com/tarciorodrigues/kyrosb-02-frontend.git
 
